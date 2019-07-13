@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shop Homepage - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+	<script type="text/javascript">
+	function getCookie(name) 
+{ 
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+ 
+    if(arr=document.cookie.match(reg))
+ 
+        return unescape(arr[2]); 
+    else 
+        return null; 
+} 
+ 
+	  window.onload=function (){
+	    if(getCookie("id")){
+		document.getElementById("llogin").style.display="none";
+		document.getElementById("llogout").style.display="visible";
+	  }
+	  if(!getCookie("id")){
+		document.getElementById("llogin").style.display="visible";
+		document.getElementById("llogout").style.display="none";
+	  }
+	  }
+</script>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">貓茶町</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+           <li class="nav-item active">
+              <a class="nav-link" href="index.php">首頁
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            
+              
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Portfolio Item Heading -->
+      <h1 class="my-4">商品詳細資訊</h1>
+
+      <!-- Portfolio Item Row -->
+      <div class="row">
+
+        <div class="col-md-8">
+          <img class="img-fluid" src="../homepage/img/7.1.jpg" alt="">
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="my-3">鐵觀音可麗露</h3><p>NT$360.00</p>
+                
+          <h3 class="my-3">產品資料</h3>
+          <ul>
+            <li>內容：發酵奶油／蛋／茶粉／香草籽／日本粉／牛奶／萊姆酒</li>
+            <li>期限：建議當天食用完畢最酥脆</li>
+            <li>規格：6入</li>
+            <li>葷素：蛋奶素</li>
+
+          </ul>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+      <!-- Related Projects Row -->
+      <h3 class="my-4">相關商品</h3>
+
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="product_detail_1.html">
+            <img class="img-fluid" src="../homepage/img/1.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="product_detail_3.html">
+            <img class="img-fluid" src="../homepage/img/3.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="product_detail_6.html">
+            <img class="img-fluid" src="../homepage/img/6.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="product_detail_8.html">
+            <img class="img-fluid" src="../homepage/img/8.jpg" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">TDH &copy; Founded in 2007</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
